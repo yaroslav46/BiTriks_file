@@ -2,8 +2,6 @@ from repositories.Selenium import sel
 import local_dir
 from time import sleep
 
-
-
 sel.log()
 loc_dir_info = local_dir.GGet_info_dir()
 search_info = sel.search()
@@ -21,5 +19,3 @@ for i in local_dir.GGet_info_dir():
         else:
            sel.new_file(i['way'])
     
-
-
